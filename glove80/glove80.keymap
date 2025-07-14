@@ -20,6 +20,9 @@
 #define MAGIC 2
 #define FACTORY_TEST 3
 
+// colours
+#define DIM_WHITE 0x333333
+
 /* Empty underglow layer definition (for copy-paste)
         mylayer {
             bindings = <
@@ -40,12 +43,12 @@
 
         lower {
             bindings = <
-    &ug WHITE  &ug WHITE  &ug PURPLE &ug PURPLE &ug PURPLE                                                                                 &ug RED    &ug BLUE   &ug BLUE   &ug ___    &ug ORANGE
-    &ug ___    &ug ___    &ug ___    &ug ___    &ug ___    &ug TEAL                                                             &ug ORANGE &ug ORANGE &ug ORANGE &ug ORANGE &ug ORANGE &ug ORANGE
-    &ug ___    &ug ___    &ug ___    &ug BLUE   &ug ___    &ug TEAL                                                             &ug ORANGE &ug WHITE  &ug WHITE  &ug WHITE  &ug ORANGE &ug ORANGE
-    &ug ___    &ug ___    &ug BLUE   &ug BLUE   &ug BLUE   &ug TEAL                                                             &ug ORANGE &ug WHITE  &ug WHITE  &ug WHITE  &ug ORANGE &ug ___
-    &ug ___    &ug ORANGE &ug ___    &ug WHITE  &ug WHITE  &ug TEAL &ug ___ &ug ___ &ug GREEN           &ug ___ &ug ___ &ug ___ &ug ORANGE &ug WHITE  &ug WHITE  &ug WHITE  &ug GREEN  &ug ___
-    &ug ___    &ug ORANGE &ug ORANGE &ug WHITE  &ug WHITE           &ug ___ &ug ___ &ug ___             &ug ___ &ug ___ &ug ___            &ug WHITE  &ug WHITE  &ug ORANGE &ug GREEN  &ug ___
+    &ug WHITE  &ug WHITE  &ug PURPLE &ug PURPLE &ug PURPLE                                                                                 &ug RED                 &ug BLUE   &ug BLUE   &ug ___    &ug ORANGE
+    &ug ___    &ug ___    &ug ___    &ug ___    &ug ___    &ug TEAL                                                             &ug ORANGE &ug_nl DIM_WHITE WHITE  &ug ORANGE &ug ORANGE &ug ORANGE &ug ORANGE
+    &ug ___    &ug ___    &ug ___    &ug BLUE   &ug ___    &ug TEAL                                                             &ug ORANGE &ug WHITE               &ug WHITE  &ug WHITE  &ug ORANGE &ug ORANGE
+    &ug ___    &ug ___    &ug BLUE   &ug BLUE   &ug BLUE   &ug TEAL                                                             &ug ORANGE &ug WHITE               &ug WHITE  &ug WHITE  &ug ORANGE &ug ___
+    &ug ___    &ug ORANGE &ug ___    &ug WHITE  &ug WHITE  &ug TEAL &ug ___ &ug ___ &ug GREEN           &ug ___ &ug ___ &ug ___ &ug ORANGE &ug WHITE               &ug WHITE  &ug WHITE  &ug GREEN  &ug ___
+    &ug ___    &ug ORANGE &ug ORANGE &ug WHITE  &ug WHITE           &ug ___ &ug ___ &ug ___             &ug ___ &ug ___ &ug ___            &ug WHITE               &ug WHITE  &ug ORANGE &ug GREEN  &ug ___
                 >;
             layer-id = <LOWER>;
         };
